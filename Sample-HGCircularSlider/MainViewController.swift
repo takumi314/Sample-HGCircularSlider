@@ -27,6 +27,8 @@ class MainViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func didTapOnCircleSiliderBtn(_ sender: UIButton, forEvent event: UIEvent) {
+    }
 }
 
 
