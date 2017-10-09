@@ -22,7 +22,21 @@ class CircularSliderView: CircularSlider {
         fatalError("init(coder:) has not been implemented")
     }
 
-    // MARK: -
+    // MARK: - User interaction methods
+
+    override func beginTracking(_ touch: UITouch, with event: UIEvent?) -> Bool {
+        return super.beginTracking(touch, with: event)
+    }
+
+    override func continueTracking(_ touch: UITouch, with event: UIEvent?) -> Bool {
+        return super.continueTracking(touch, with: event)
+    }
+
+    override func endTracking(_ touch: UITouch?, with event: UIEvent?) {
+        return super.endTracking(touch, with: event)
+    }
+
+    // MARK: - Private methods
 
 
 }
