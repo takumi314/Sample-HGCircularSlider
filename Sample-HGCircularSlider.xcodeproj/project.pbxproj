@@ -7,16 +7,66 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E1BC208A1F8B309D00EF42A8 /* HGCircularSlider.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1BC207A1F8B302F00EF42A8 /* HGCircularSlider.framework */; };
+		E1BC208B1F8B309D00EF42A8 /* HGCircularSlider.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E1BC207A1F8B302F00EF42A8 /* HGCircularSlider.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E1FAB8B11F893FC400FC55F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1FAB8B01F893FC400FC55F7 /* AppDelegate.swift */; };
 		E1FAB8B31F893FC400FC55F7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1FAB8B21F893FC400FC55F7 /* ViewController.swift */; };
 		E1FAB8B61F893FC400FC55F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1FAB8B41F893FC400FC55F7 /* Main.storyboard */; };
 		E1FAB8B81F893FC400FC55F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1FAB8B71F893FC400FC55F7 /* Assets.xcassets */; };
 		E1FAB8BB1F893FC400FC55F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1FAB8B91F893FC400FC55F7 /* LaunchScreen.storyboard */; };
 		E1FAB8C61F893FC400FC55F7 /* Sample_HGCircularSliderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1FAB8C51F893FC400FC55F7 /* Sample_HGCircularSliderTests.swift */; };
-		E1FAB8D21F89412B00FC55F7 /* HGCircularSlider.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1FAB8D11F89412B00FC55F7 /* HGCircularSlider.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		E1BC20791F8B302F00EF42A8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E1BC206D1F8B302F00EF42A8 /* HGCircularSlider.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = CCDBFDDB1E43366F005D6F08;
+			remoteInfo = HGCircularSlider;
+		};
+		E1BC207D1F8B302F00EF42A8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E1BC20321F8B302E00EF42A8 /* HGCircularSlider.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 607FACD01AFB9204008FA782;
+			remoteInfo = HGCircularSlider_Example;
+		};
+		E1BC207F1F8B302F00EF42A8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E1BC20321F8B302E00EF42A8 /* HGCircularSlider.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 607FACE51AFB9204008FA782;
+			remoteInfo = HGCircularSlider_Tests;
+		};
+		E1BC20841F8B302F00EF42A8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E1BC203C1F8B302F00EF42A8 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 31300D8F0E8F2108E8A8630122FC05A9;
+			remoteInfo = HGCircularSlider;
+		};
+		E1BC20861F8B302F00EF42A8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E1BC203C1F8B302F00EF42A8 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4FBDE23EFF1DC52A744BAFE471C32AC8;
+			remoteInfo = "Pods-HGCircularSlider_Example";
+		};
+		E1BC20881F8B302F00EF42A8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E1BC203C1F8B302F00EF42A8 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 67AEE4E9C7F7FCE20B950E94B8A0E63F;
+			remoteInfo = "Pods-HGCircularSlider_Tests";
+		};
+		E1BC208C1F8B309D00EF42A8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E1BC206D1F8B302F00EF42A8 /* HGCircularSlider.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = CCDBFDDA1E43366F005D6F08;
+			remoteInfo = HGCircularSlider;
+		};
 		E1FAB8C21F893FC400FC55F7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = E1FAB8A51F893FC400FC55F7 /* Project object */;
@@ -26,7 +76,91 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		E1BC208E1F8B309D00EF42A8 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E1BC208B1F8B309D00EF42A8 /* HGCircularSlider.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		E1BC201D1F8B302E00EF42A8 /* .codebeatsettings */ = {isa = PBXFileReference; lastKnownFileType = text; path = .codebeatsettings; sourceTree = "<group>"; };
+		E1BC201E1F8B302E00EF42A8 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		E1BC201F1F8B302E00EF42A8 /* .jazzy.yaml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .jazzy.yaml; sourceTree = "<group>"; };
+		E1BC20201F8B302E00EF42A8 /* .swift-version */ = {isa = PBXFileReference; lastKnownFileType = text; path = ".swift-version"; sourceTree = "<group>"; };
+		E1BC20211F8B302E00EF42A8 /* .travis.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .travis.yml; sourceTree = "<group>"; };
+		E1BC20221F8B302E00EF42A8 /* CHANGELOG.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = "<group>"; };
+		E1BC20251F8B302E00EF42A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E1BC20271F8B302E00EF42A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		E1BC20291F8B302E00EF42A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E1BC202A1F8B302E00EF42A8 /* CircularSliderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularSliderViewController.swift; sourceTree = "<group>"; };
+		E1BC202B1F8B302E00EF42A8 /* ClockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockViewController.swift; sourceTree = "<group>"; };
+		E1BC202C1F8B302E00EF42A8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		E1BC202D1F8B302E00EF42A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E1BC202E1F8B302E00EF42A8 /* OClockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OClockViewController.swift; sourceTree = "<group>"; };
+		E1BC202F1F8B302E00EF42A8 /* OtherExampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherExampleViewController.swift; sourceTree = "<group>"; };
+		E1BC20301F8B302E00EF42A8 /* PlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
+		E1BC20311F8B302E00EF42A8 /* StrangeZero.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = StrangeZero.mp3; sourceTree = "<group>"; };
+		E1BC20321F8B302E00EF42A8 /* HGCircularSlider.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = HGCircularSlider.xcodeproj; sourceTree = "<group>"; };
+		E1BC20351F8B302F00EF42A8 /* HGCircularSlider.xcworkspace */ = {isa = PBXFileReference; lastKnownFileType = wrapper.workspace; path = HGCircularSlider.xcworkspace; sourceTree = "<group>"; };
+		E1BC20361F8B302F00EF42A8 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		E1BC20371F8B302F00EF42A8 /* Podfile.lock */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile.lock; sourceTree = "<group>"; };
+		E1BC203A1F8B302F00EF42A8 /* HGCircularSlider.podspec.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = HGCircularSlider.podspec.json; sourceTree = "<group>"; };
+		E1BC203B1F8B302F00EF42A8 /* Manifest.lock */ = {isa = PBXFileReference; lastKnownFileType = text; path = Manifest.lock; sourceTree = "<group>"; };
+		E1BC203C1F8B302F00EF42A8 /* Pods.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = Pods.xcodeproj; sourceTree = "<group>"; };
+		E1BC20411F8B302F00EF42A8 /* HGCircularSlider-dummy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "HGCircularSlider-dummy.m"; sourceTree = "<group>"; };
+		E1BC20421F8B302F00EF42A8 /* HGCircularSlider-prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HGCircularSlider-prefix.pch"; sourceTree = "<group>"; };
+		E1BC20431F8B302F00EF42A8 /* HGCircularSlider-umbrella.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HGCircularSlider-umbrella.h"; sourceTree = "<group>"; };
+		E1BC20441F8B302F00EF42A8 /* HGCircularSlider.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = HGCircularSlider.modulemap; sourceTree = "<group>"; };
+		E1BC20451F8B302F00EF42A8 /* HGCircularSlider.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = HGCircularSlider.xcconfig; sourceTree = "<group>"; };
+		E1BC20461F8B302F00EF42A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E1BC20481F8B302F00EF42A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E1BC20491F8B302F00EF42A8 /* Pods-HGCircularSlider_Example-acknowledgements.markdown */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "Pods-HGCircularSlider_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E1BC204A1F8B302F00EF42A8 /* Pods-HGCircularSlider_Example-acknowledgements.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Pods-HGCircularSlider_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		E1BC204B1F8B302F00EF42A8 /* Pods-HGCircularSlider_Example-dummy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Pods-HGCircularSlider_Example-dummy.m"; sourceTree = "<group>"; };
+		E1BC204C1F8B302F00EF42A8 /* Pods-HGCircularSlider_Example-frameworks.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "Pods-HGCircularSlider_Example-frameworks.sh"; sourceTree = "<group>"; };
+		E1BC204D1F8B302F00EF42A8 /* Pods-HGCircularSlider_Example-resources.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "Pods-HGCircularSlider_Example-resources.sh"; sourceTree = "<group>"; };
+		E1BC204E1F8B302F00EF42A8 /* Pods-HGCircularSlider_Example-umbrella.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Pods-HGCircularSlider_Example-umbrella.h"; sourceTree = "<group>"; };
+		E1BC204F1F8B302F00EF42A8 /* Pods-HGCircularSlider_Example.debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Pods-HGCircularSlider_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		E1BC20501F8B302F00EF42A8 /* Pods-HGCircularSlider_Example.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = "Pods-HGCircularSlider_Example.modulemap"; sourceTree = "<group>"; };
+		E1BC20511F8B302F00EF42A8 /* Pods-HGCircularSlider_Example.release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Pods-HGCircularSlider_Example.release.xcconfig"; sourceTree = "<group>"; };
+		E1BC20531F8B302F00EF42A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E1BC20541F8B302F00EF42A8 /* Pods-HGCircularSlider_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "Pods-HGCircularSlider_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E1BC20551F8B302F00EF42A8 /* Pods-HGCircularSlider_Tests-acknowledgements.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Pods-HGCircularSlider_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		E1BC20561F8B302F00EF42A8 /* Pods-HGCircularSlider_Tests-dummy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Pods-HGCircularSlider_Tests-dummy.m"; sourceTree = "<group>"; };
+		E1BC20571F8B302F00EF42A8 /* Pods-HGCircularSlider_Tests-frameworks.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "Pods-HGCircularSlider_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		E1BC20581F8B302F00EF42A8 /* Pods-HGCircularSlider_Tests-resources.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "Pods-HGCircularSlider_Tests-resources.sh"; sourceTree = "<group>"; };
+		E1BC20591F8B302F00EF42A8 /* Pods-HGCircularSlider_Tests-umbrella.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Pods-HGCircularSlider_Tests-umbrella.h"; sourceTree = "<group>"; };
+		E1BC205A1F8B302F00EF42A8 /* Pods-HGCircularSlider_Tests.debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Pods-HGCircularSlider_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		E1BC205B1F8B302F00EF42A8 /* Pods-HGCircularSlider_Tests.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = "Pods-HGCircularSlider_Tests.modulemap"; sourceTree = "<group>"; };
+		E1BC205C1F8B302F00EF42A8 /* Pods-HGCircularSlider_Tests.release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Pods-HGCircularSlider_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		E1BC205E1F8B302F00EF42A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E1BC205F1F8B302F00EF42A8 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
+		E1BC20621F8B302F00EF42A8 /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		E1BC20641F8B302F00EF42A8 /* CircularSlider+Draw.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CircularSlider+Draw.swift"; sourceTree = "<group>"; };
+		E1BC20651F8B302F00EF42A8 /* CircularSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularSlider.swift; sourceTree = "<group>"; };
+		E1BC20661F8B302F00EF42A8 /* CircularSliderHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularSliderHelper.swift; sourceTree = "<group>"; };
+		E1BC20671F8B302F00EF42A8 /* MidPointCircularSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MidPointCircularSlider.swift; sourceTree = "<group>"; };
+		E1BC20681F8B302F00EF42A8 /* RangeCircularSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RangeCircularSlider.swift; sourceTree = "<group>"; };
+		E1BC20691F8B302F00EF42A8 /* HGCircularSlider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HGCircularSlider.h; sourceTree = "<group>"; };
+		E1BC206A1F8B302F00EF42A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E1BC206B1F8B302F00EF42A8 /* HGCircularSlider.framework.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = HGCircularSlider.framework.zip; sourceTree = "<group>"; };
+		E1BC206C1F8B302F00EF42A8 /* HGCircularSlider.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = HGCircularSlider.podspec; sourceTree = "<group>"; };
+		E1BC206D1F8B302F00EF42A8 /* HGCircularSlider.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = HGCircularSlider.xcodeproj; sourceTree = "<group>"; };
+		E1BC20701F8B302F00EF42A8 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		E1BC20711F8B302F00EF42A8 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		E1BC20731F8B302F00EF42A8 /* Bedtime.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Bedtime.gif; sourceTree = "<group>"; };
+		E1BC20741F8B302F00EF42A8 /* Circular.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Circular.gif; sourceTree = "<group>"; };
+		E1BC20751F8B302F00EF42A8 /* OClock.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = OClock.gif; sourceTree = "<group>"; };
+		E1BC20761F8B302F00EF42A8 /* Other.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Other.gif; sourceTree = "<group>"; };
+		E1BC20771F8B302F00EF42A8 /* Player.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Player.gif; sourceTree = "<group>"; };
 		E1FAB8AD1F893FC400FC55F7 /* Sample-HGCircularSlider.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sample-HGCircularSlider.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1FAB8B01F893FC400FC55F7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E1FAB8B21F893FC400FC55F7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -37,7 +171,6 @@
 		E1FAB8C11F893FC400FC55F7 /* Sample-HGCircularSliderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Sample-HGCircularSliderTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1FAB8C51F893FC400FC55F7 /* Sample_HGCircularSliderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sample_HGCircularSliderTests.swift; sourceTree = "<group>"; };
 		E1FAB8C71F893FC400FC55F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E1FAB8D11F89412B00FC55F7 /* HGCircularSlider.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HGCircularSlider.framework; path = Carthage/Build/iOS/HGCircularSlider.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,7 +178,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E1FAB8D21F89412B00FC55F7 /* HGCircularSlider.framework in Frameworks */,
+				E1BC208A1F8B309D00EF42A8 /* HGCircularSlider.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,9 +192,218 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E1BC201C1F8B302E00EF42A8 /* HGCircularSlider */ = {
+			isa = PBXGroup;
+			children = (
+				E1BC201D1F8B302E00EF42A8 /* .codebeatsettings */,
+				E1BC201E1F8B302E00EF42A8 /* .gitignore */,
+				E1BC201F1F8B302E00EF42A8 /* .jazzy.yaml */,
+				E1BC20201F8B302E00EF42A8 /* .swift-version */,
+				E1BC20211F8B302E00EF42A8 /* .travis.yml */,
+				E1BC20221F8B302E00EF42A8 /* CHANGELOG.md */,
+				E1BC20231F8B302E00EF42A8 /* Example */,
+				E1BC20601F8B302F00EF42A8 /* HGCircularSlider */,
+				E1BC206B1F8B302F00EF42A8 /* HGCircularSlider.framework.zip */,
+				E1BC206C1F8B302F00EF42A8 /* HGCircularSlider.podspec */,
+				E1BC206D1F8B302F00EF42A8 /* HGCircularSlider.xcodeproj */,
+				E1BC20701F8B302F00EF42A8 /* LICENSE */,
+				E1BC20711F8B302F00EF42A8 /* README.md */,
+				E1BC20721F8B302F00EF42A8 /* Screenshots */,
+			);
+			path = HGCircularSlider;
+			sourceTree = "<group>";
+		};
+		E1BC20231F8B302E00EF42A8 /* Example */ = {
+			isa = PBXGroup;
+			children = (
+				E1BC20241F8B302E00EF42A8 /* HGCircularSlider */,
+				E1BC20321F8B302E00EF42A8 /* HGCircularSlider.xcodeproj */,
+				E1BC20351F8B302F00EF42A8 /* HGCircularSlider.xcworkspace */,
+				E1BC20361F8B302F00EF42A8 /* Podfile */,
+				E1BC20371F8B302F00EF42A8 /* Podfile.lock */,
+				E1BC20381F8B302F00EF42A8 /* Pods */,
+				E1BC205D1F8B302F00EF42A8 /* Tests */,
+			);
+			path = Example;
+			sourceTree = "<group>";
+		};
+		E1BC20241F8B302E00EF42A8 /* HGCircularSlider */ = {
+			isa = PBXGroup;
+			children = (
+				E1BC20251F8B302E00EF42A8 /* AppDelegate.swift */,
+				E1BC20261F8B302E00EF42A8 /* LaunchScreen.xib */,
+				E1BC20281F8B302E00EF42A8 /* Main.storyboard */,
+				E1BC202A1F8B302E00EF42A8 /* CircularSliderViewController.swift */,
+				E1BC202B1F8B302E00EF42A8 /* ClockViewController.swift */,
+				E1BC202C1F8B302E00EF42A8 /* Images.xcassets */,
+				E1BC202D1F8B302E00EF42A8 /* Info.plist */,
+				E1BC202E1F8B302E00EF42A8 /* OClockViewController.swift */,
+				E1BC202F1F8B302E00EF42A8 /* OtherExampleViewController.swift */,
+				E1BC20301F8B302E00EF42A8 /* PlayerViewController.swift */,
+				E1BC20311F8B302E00EF42A8 /* StrangeZero.mp3 */,
+			);
+			path = HGCircularSlider;
+			sourceTree = "<group>";
+		};
+		E1BC20331F8B302E00EF42A8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E1BC207E1F8B302F00EF42A8 /* HGCircularSlider_Example.app */,
+				E1BC20801F8B302F00EF42A8 /* HGCircularSlider_Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E1BC20381F8B302F00EF42A8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E1BC20391F8B302F00EF42A8 /* Local Podspecs */,
+				E1BC203B1F8B302F00EF42A8 /* Manifest.lock */,
+				E1BC203C1F8B302F00EF42A8 /* Pods.xcodeproj */,
+				E1BC203F1F8B302F00EF42A8 /* Target Support Files */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E1BC20391F8B302F00EF42A8 /* Local Podspecs */ = {
+			isa = PBXGroup;
+			children = (
+				E1BC203A1F8B302F00EF42A8 /* HGCircularSlider.podspec.json */,
+			);
+			path = "Local Podspecs";
+			sourceTree = "<group>";
+		};
+		E1BC203D1F8B302F00EF42A8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E1BC20851F8B302F00EF42A8 /* HGCircularSlider.framework */,
+				E1BC20871F8B302F00EF42A8 /* Pods_HGCircularSlider_Example.framework */,
+				E1BC20891F8B302F00EF42A8 /* Pods_HGCircularSlider_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E1BC203F1F8B302F00EF42A8 /* Target Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E1BC20401F8B302F00EF42A8 /* HGCircularSlider */,
+				E1BC20471F8B302F00EF42A8 /* Pods-HGCircularSlider_Example */,
+				E1BC20521F8B302F00EF42A8 /* Pods-HGCircularSlider_Tests */,
+			);
+			path = "Target Support Files";
+			sourceTree = "<group>";
+		};
+		E1BC20401F8B302F00EF42A8 /* HGCircularSlider */ = {
+			isa = PBXGroup;
+			children = (
+				E1BC20411F8B302F00EF42A8 /* HGCircularSlider-dummy.m */,
+				E1BC20421F8B302F00EF42A8 /* HGCircularSlider-prefix.pch */,
+				E1BC20431F8B302F00EF42A8 /* HGCircularSlider-umbrella.h */,
+				E1BC20441F8B302F00EF42A8 /* HGCircularSlider.modulemap */,
+				E1BC20451F8B302F00EF42A8 /* HGCircularSlider.xcconfig */,
+				E1BC20461F8B302F00EF42A8 /* Info.plist */,
+			);
+			path = HGCircularSlider;
+			sourceTree = "<group>";
+		};
+		E1BC20471F8B302F00EF42A8 /* Pods-HGCircularSlider_Example */ = {
+			isa = PBXGroup;
+			children = (
+				E1BC20481F8B302F00EF42A8 /* Info.plist */,
+				E1BC20491F8B302F00EF42A8 /* Pods-HGCircularSlider_Example-acknowledgements.markdown */,
+				E1BC204A1F8B302F00EF42A8 /* Pods-HGCircularSlider_Example-acknowledgements.plist */,
+				E1BC204B1F8B302F00EF42A8 /* Pods-HGCircularSlider_Example-dummy.m */,
+				E1BC204C1F8B302F00EF42A8 /* Pods-HGCircularSlider_Example-frameworks.sh */,
+				E1BC204D1F8B302F00EF42A8 /* Pods-HGCircularSlider_Example-resources.sh */,
+				E1BC204E1F8B302F00EF42A8 /* Pods-HGCircularSlider_Example-umbrella.h */,
+				E1BC204F1F8B302F00EF42A8 /* Pods-HGCircularSlider_Example.debug.xcconfig */,
+				E1BC20501F8B302F00EF42A8 /* Pods-HGCircularSlider_Example.modulemap */,
+				E1BC20511F8B302F00EF42A8 /* Pods-HGCircularSlider_Example.release.xcconfig */,
+			);
+			path = "Pods-HGCircularSlider_Example";
+			sourceTree = "<group>";
+		};
+		E1BC20521F8B302F00EF42A8 /* Pods-HGCircularSlider_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				E1BC20531F8B302F00EF42A8 /* Info.plist */,
+				E1BC20541F8B302F00EF42A8 /* Pods-HGCircularSlider_Tests-acknowledgements.markdown */,
+				E1BC20551F8B302F00EF42A8 /* Pods-HGCircularSlider_Tests-acknowledgements.plist */,
+				E1BC20561F8B302F00EF42A8 /* Pods-HGCircularSlider_Tests-dummy.m */,
+				E1BC20571F8B302F00EF42A8 /* Pods-HGCircularSlider_Tests-frameworks.sh */,
+				E1BC20581F8B302F00EF42A8 /* Pods-HGCircularSlider_Tests-resources.sh */,
+				E1BC20591F8B302F00EF42A8 /* Pods-HGCircularSlider_Tests-umbrella.h */,
+				E1BC205A1F8B302F00EF42A8 /* Pods-HGCircularSlider_Tests.debug.xcconfig */,
+				E1BC205B1F8B302F00EF42A8 /* Pods-HGCircularSlider_Tests.modulemap */,
+				E1BC205C1F8B302F00EF42A8 /* Pods-HGCircularSlider_Tests.release.xcconfig */,
+			);
+			path = "Pods-HGCircularSlider_Tests";
+			sourceTree = "<group>";
+		};
+		E1BC205D1F8B302F00EF42A8 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				E1BC205E1F8B302F00EF42A8 /* Info.plist */,
+				E1BC205F1F8B302F00EF42A8 /* Tests.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		E1BC20601F8B302F00EF42A8 /* HGCircularSlider */ = {
+			isa = PBXGroup;
+			children = (
+				E1BC20611F8B302F00EF42A8 /* Assets */,
+				E1BC20631F8B302F00EF42A8 /* Classes */,
+				E1BC20691F8B302F00EF42A8 /* HGCircularSlider.h */,
+				E1BC206A1F8B302F00EF42A8 /* Info.plist */,
+			);
+			path = HGCircularSlider;
+			sourceTree = "<group>";
+		};
+		E1BC20611F8B302F00EF42A8 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				E1BC20621F8B302F00EF42A8 /* .gitkeep */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		E1BC20631F8B302F00EF42A8 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				E1BC20641F8B302F00EF42A8 /* CircularSlider+Draw.swift */,
+				E1BC20651F8B302F00EF42A8 /* CircularSlider.swift */,
+				E1BC20661F8B302F00EF42A8 /* CircularSliderHelper.swift */,
+				E1BC20671F8B302F00EF42A8 /* MidPointCircularSlider.swift */,
+				E1BC20681F8B302F00EF42A8 /* RangeCircularSlider.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		E1BC206E1F8B302F00EF42A8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E1BC207A1F8B302F00EF42A8 /* HGCircularSlider.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E1BC20721F8B302F00EF42A8 /* Screenshots */ = {
+			isa = PBXGroup;
+			children = (
+				E1BC20731F8B302F00EF42A8 /* Bedtime.gif */,
+				E1BC20741F8B302F00EF42A8 /* Circular.gif */,
+				E1BC20751F8B302F00EF42A8 /* OClock.gif */,
+				E1BC20761F8B302F00EF42A8 /* Other.gif */,
+				E1BC20771F8B302F00EF42A8 /* Player.gif */,
+			);
+			path = Screenshots;
+			sourceTree = "<group>";
+		};
 		E1FAB8A41F893FC400FC55F7 = {
 			isa = PBXGroup;
 			children = (
+				E1BC201C1F8B302E00EF42A8 /* HGCircularSlider */,
 				E1FAB8AF1F893FC400FC55F7 /* Sample-HGCircularSlider */,
 				E1FAB8C41F893FC400FC55F7 /* Sample-HGCircularSliderTests */,
 				E1FAB8AE1F893FC400FC55F7 /* Products */,
@@ -103,7 +445,6 @@
 		E1FAB8D01F89412B00FC55F7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				E1FAB8D11F89412B00FC55F7 /* HGCircularSlider.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -119,10 +460,12 @@
 				E1FAB8AA1F893FC400FC55F7 /* Frameworks */,
 				E1FAB8AB1F893FC400FC55F7 /* Resources */,
 				E1FAB8D31F89413200FC55F7 /* ShellScript */,
+				E1BC208E1F8B309D00EF42A8 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				E1BC208D1F8B309D00EF42A8 /* PBXTargetDependency */,
 			);
 			name = "Sample-HGCircularSlider";
 			productName = "Sample-HGCircularSlider";
@@ -160,6 +503,7 @@
 					E1FAB8AC1F893FC400FC55F7 = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = 9D8UR7H9D4;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 					E1FAB8C01F893FC400FC55F7 = {
@@ -181,6 +525,20 @@
 			mainGroup = E1FAB8A41F893FC400FC55F7;
 			productRefGroup = E1FAB8AE1F893FC400FC55F7 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = E1BC206E1F8B302F00EF42A8 /* Products */;
+					ProjectRef = E1BC206D1F8B302F00EF42A8 /* HGCircularSlider.xcodeproj */;
+				},
+				{
+					ProductGroup = E1BC20331F8B302E00EF42A8 /* Products */;
+					ProjectRef = E1BC20321F8B302E00EF42A8 /* HGCircularSlider.xcodeproj */;
+				},
+				{
+					ProductGroup = E1BC203D1F8B302F00EF42A8 /* Products */;
+					ProjectRef = E1BC203C1F8B302F00EF42A8 /* Pods.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				E1FAB8AC1F893FC400FC55F7 /* Sample-HGCircularSlider */,
@@ -188,6 +546,51 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		E1BC207A1F8B302F00EF42A8 /* HGCircularSlider.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = HGCircularSlider.framework;
+			remoteRef = E1BC20791F8B302F00EF42A8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		E1BC207E1F8B302F00EF42A8 /* HGCircularSlider_Example.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = HGCircularSlider_Example.app;
+			remoteRef = E1BC207D1F8B302F00EF42A8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		E1BC20801F8B302F00EF42A8 /* HGCircularSlider_Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = HGCircularSlider_Tests.xctest;
+			remoteRef = E1BC207F1F8B302F00EF42A8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		E1BC20851F8B302F00EF42A8 /* HGCircularSlider.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = HGCircularSlider.framework;
+			remoteRef = E1BC20841F8B302F00EF42A8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		E1BC20871F8B302F00EF42A8 /* Pods_HGCircularSlider_Example.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Pods_HGCircularSlider_Example.framework;
+			remoteRef = E1BC20861F8B302F00EF42A8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		E1BC20891F8B302F00EF42A8 /* Pods_HGCircularSlider_Tests.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Pods_HGCircularSlider_Tests.framework;
+			remoteRef = E1BC20881F8B302F00EF42A8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		E1FAB8AB1F893FC400FC55F7 /* Resources */ = {
@@ -216,14 +619,12 @@
 			files = (
 			);
 			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/iOS/HGCircularSlider.framework",
 			);
 			outputPaths = (
-				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/HGCircularSlider.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks";
+			shellScript = "";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -248,6 +649,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		E1BC208D1F8B309D00EF42A8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = HGCircularSlider;
+			targetProxy = E1BC208C1F8B309D00EF42A8 /* PBXContainerItemProxy */;
+		};
 		E1FAB8C31F893FC400FC55F7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = E1FAB8AC1F893FC400FC55F7 /* Sample-HGCircularSlider */;
@@ -256,6 +662,22 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		E1BC20261F8B302E00EF42A8 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E1BC20271F8B302E00EF42A8 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		E1BC20281F8B302E00EF42A8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E1BC20291F8B302E00EF42A8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
 		E1FAB8B41F893FC400FC55F7 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -316,7 +738,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -360,7 +782,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -371,6 +793,7 @@
 		E1FAB8CB1F893FC400FC55F7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 9D8UR7H9D4;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -378,16 +801,19 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "Sample-HGCircularSlider/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.takumi314.Sample-HGCircularSlider";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
 		E1FAB8CC1F893FC400FC55F7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 9D8UR7H9D4;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -395,10 +821,12 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "Sample-HGCircularSlider/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.takumi314.Sample-HGCircularSlider";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
