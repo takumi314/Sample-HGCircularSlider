@@ -1,5 +1,5 @@
 //
-//  CircularSliderSampleListViewController.swift
+//  SimplestCircularSliderViewController.swift
 //  Sample-HGCircularSlider
 //
 //  Created by NishiokaKohei on 2017/10/09.
@@ -8,13 +8,12 @@
 
 import UIKit
 
-class CircularSliderSampleListViewController: UITableViewController {
+class SimplestCircularSliderViewController: UIViewController  {
 
-    // MARK: - Life cycle
+    // MARK: - Iife cycle
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = CircularSliderSampleListViewController.identifier()
     }
 
 }
