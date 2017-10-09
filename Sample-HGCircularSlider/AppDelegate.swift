@@ -20,9 +20,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // setup NavigationViewController
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let main = storyboard.instantiateViewController(withIdentifier: MainViewController.identifier())
-        navigationController = UINavigationController(rootViewController: main)
         window = UIWindow(frame: UIScreen.main.bounds)
-        window?.rootViewController = navigationController
+        window?.rootViewController = UINavigationController(rootViewController: main)
         window?.makeKeyAndVisible()
 
         return true
