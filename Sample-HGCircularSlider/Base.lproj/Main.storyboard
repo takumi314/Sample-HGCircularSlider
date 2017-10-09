@@ -21,17 +21,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="so8-xA-xMM">
-                                <rect key="frame" x="141" y="144" width="93" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="so8-xA-xMM">
+                                <rect key="frame" x="141" y="318.5" width="93" height="30"/>
                                 <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="CircularSlider"/>
                                 <connections>
-                                    <action selector="didTapOnCircleSiliderBtn:forEvent:" destination="BYZ-38-t0r" eventType="editingDidEndOnExit" id="qzY-jj-4SV"/>
+                                    <action selector="didTapOnCircleSiliderBtn:forEvent:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uAa-zn-dMK"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="so8-xA-xMM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MXY-1i-rUe"/>
+                            <constraint firstItem="so8-xA-xMM" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="R6C-Bd-UxZ"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

@@ -14,7 +14,6 @@ class MainViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -27,7 +26,12 @@ class MainViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    // MARK: - IBActions
+
     @IBAction func didTapOnCircleSiliderBtn(_ sender: UIButton, forEvent event: UIEvent) {
+        let stroyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = stroyboard.instantiateViewController(withIdentifier: CircularSliderSampleListViewController.identifier())
+        self.navigationController?.pushViewController(vc, animated: true)
     }
 }
 
