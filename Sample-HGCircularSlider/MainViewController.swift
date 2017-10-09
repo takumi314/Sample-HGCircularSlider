@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  MainViewController.swift
 //  Sample-HGCircularSlider
 //
 //  Created by NishiokaKohei on 2017/10/08.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class MainViewController: UIViewController {
 
     // MARK: -  Life cycle
 
