@@ -13,6 +13,7 @@
 		E1D6B7DA1F8B6A6700391DBB /* SimplestCircularSliderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D6B7D91F8B6A6700391DBB /* SimplestCircularSliderViewController.swift */; };
 		E1D6B7E31F8B95E900391DBB /* CircleSliderPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D6B7E21F8B95E900391DBB /* CircleSliderPresenter.swift */; };
 		E1D6B7E61F8B9D3900391DBB /* UIScreenExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D6B7E51F8B9D3900391DBB /* UIScreenExtension.swift */; };
+		E1D6B7E91F8BD8F800391DBB /* CircularSliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D6B7E81F8BD8F800391DBB /* CircularSliderView.swift */; };
 		E1FAB8B11F893FC400FC55F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1FAB8B01F893FC400FC55F7 /* AppDelegate.swift */; };
 		E1FAB8B31F893FC400FC55F7 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1FAB8B21F893FC400FC55F7 /* MainViewController.swift */; };
 		E1FAB8B61F893FC400FC55F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1FAB8B41F893FC400FC55F7 /* Main.storyboard */; };
@@ -169,6 +170,7 @@
 		E1D6B7D91F8B6A6700391DBB /* SimplestCircularSliderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimplestCircularSliderViewController.swift; sourceTree = "<group>"; };
 		E1D6B7E21F8B95E900391DBB /* CircleSliderPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleSliderPresenter.swift; sourceTree = "<group>"; };
 		E1D6B7E51F8B9D3900391DBB /* UIScreenExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIScreenExtension.swift; sourceTree = "<group>"; };
+		E1D6B7E81F8BD8F800391DBB /* CircularSliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularSliderView.swift; sourceTree = "<group>"; };
 		E1FAB8AD1F893FC400FC55F7 /* Sample-HGCircularSlider.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sample-HGCircularSlider.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1FAB8B01F893FC400FC55F7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E1FAB8B21F893FC400FC55F7 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -433,6 +435,14 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		E1D6B7E71F8BD70700391DBB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E1D6B7E81F8BD8F800391DBB /* CircularSliderView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		E1FAB8A41F893FC400FC55F7 = {
 			isa = PBXGroup;
 			children = (
@@ -456,6 +466,7 @@
 		E1FAB8AF1F893FC400FC55F7 /* Sample-HGCircularSlider */ = {
 			isa = PBXGroup;
 			children = (
+				E1D6B7E71F8BD70700391DBB /* Views */,
 				E1D6B7E41F8B9D1D00391DBB /* Extensions */,
 				E1D6B7E11F8B95AE00391DBB /* Presenters */,
 				E1D6B7E01F8B6DE200391DBB /* CircularSliders */,
@@ -675,6 +686,7 @@
 				E1D6B7E61F8B9D3900391DBB /* UIScreenExtension.swift in Sources */,
 				E1D6B7E31F8B95E900391DBB /* CircleSliderPresenter.swift in Sources */,
 				E1FAB8B11F893FC400FC55F7 /* AppDelegate.swift in Sources */,
+				E1D6B7E91F8BD8F800391DBB /* CircularSliderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
