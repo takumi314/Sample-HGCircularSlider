@@ -13,14 +13,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
+    private var navigationController: UINavigationController?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
 
         // setup NavigationViewController
-        let nv = UINavigationController()
-        let main = MainViewController()
-        nv.addChildViewController(main)
-        window?.rootViewController = nv
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let main = storyboard.instantiateViewController(withIdentifier: MainViewController.identifier())
+        navigationController = UINavigationController(rootViewController: main)
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.rootViewController = navigationController
         window?.makeKeyAndVisible()
 
         return true

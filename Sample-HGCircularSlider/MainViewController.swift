@@ -33,17 +33,22 @@ class MainViewController: UIViewController {
 
 
 // MARK: - NSObject
+extension UIViewController: Identifiable {
+    class func identifier() -> String {
+        return self.className()
+    }
+}
 
-extension NSObject: Identifiable { }
+extension NSObjectProtocol {
+    static func className() -> String {
+        return "\(self)"
+    }
+}
 
 // MARK: - Protocols
-
 protocol Identifiable {
-    func identifier() -> String
+    static func identifier() -> String
 }
 
 extension Identifiable {
-    func identifier() -> String {
-        return "\(self)"
-    }
 }
