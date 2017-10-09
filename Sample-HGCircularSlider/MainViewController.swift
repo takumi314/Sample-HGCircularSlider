@@ -10,6 +10,8 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    // MARK: -  Life cycle
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -20,6 +22,21 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
 }
 
+
+// MARK: - NSObject
+
+extension NSObject: Identifiable { }
+
+// MARK: - Protocols
+
+protocol Identifiable {
+    func identifier() -> String
+}
+
+extension Identifiable {
+    func identifier() -> String {
+        return "\(self)"
+    }
+}
