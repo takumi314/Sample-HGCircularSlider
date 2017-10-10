@@ -8,6 +8,11 @@
 
 import UIKit
 
+enum CellType: String {
+    case simplest = "SimplestCircularSliderViewController"
+    case other
+}
+
 class CircularSliderSampleListViewController: UITableViewController {
 
     // MARK: - Life cycle
@@ -17,16 +22,22 @@ class CircularSliderSampleListViewController: UITableViewController {
         title = CircularSliderSampleListViewController.identifier()
     }
 
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    // MARK: - UITableViewDelegte
 
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard let next = getViewController(from: tableView, at: indexPath) else {
+            return
+        }
+        navigationController?.pushViewController(next, animated: true)
     }
 
-    private func hoge(_ table: UITableView, at indePath: IndexPath) -> UIViewController? {
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+    private func getViewController(from tableView: UITableView, at indePath: IndexPath) -> UIViewController? {
         var vc: UIViewController? = nil
-        switch indePath.row {
-        case 0:
-            vc = storyboard.instantiateViewController(withIdentifier: SimplestCircularSliderViewController.identifier())
+        let identifier = tableView.cellForRow(at: indePath)?.restorationIdentifier ?? ""
+        let type = CellType(rawValue: identifier) ?? .other
+        switch type {
+        case .simplest:
+            vc = SimplestCircularSliderViewController()
             break
         default:
             break
