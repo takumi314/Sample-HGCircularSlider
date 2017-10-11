@@ -11,46 +11,66 @@ import HGCircularSlider
 
 class CircularSliderPresenter: NSObject {
 
-    var circularSlider: CircularSlider
+    var circularSlider: CircularSliderView
 
-    private var frame: CGRect {
+    private var baseView: UIView {
         didSet {
-            self.circularSlider.frame = frame
+            UIView.animate(withDuration: 0.2) { [unowned self] in
+                self.circularSlider.frame.size = self.baseView.frame.size
+                self.circularSlider.setNeedsDisplay()
+            }
         }
     }
 
     // MARK: - Initilizer
 
-    private override init() {
-        self.circularSlider = CircularSlider()
-        self.frame = CGRect(x: 0.0, y: 0.0, width: 0.0, height: 0.0)
+    required override init() {
+        self.circularSlider = CircularSliderView()
+        self.baseView = UIView()
     }
-
     ///
     /// Required to cell this initializer
     ///
-    convenience init(_ viewController: UIViewController) {
+    convenience init(with base: UIView) {
         self.init()
-        self.frame = viewController.view.frame
+        let frame = CGRect(origin: CGPoint.zero, size: base.frame.size)
+        self.circularSlider = CircularSliderView(frame: frame)
+        self.baseView = base
+    }
+
+    convenience init(_ viewController: SimplestCircularSliderViewController) {
+        self.init(with: viewController.frameView)
+        self.baseView = viewController.frameView
     }
 
     // MARK: - Public methods
 
-    func instatiate() -> UIView {
+    func instatiate() -> CircularSliderView {
+        changeCircle()
+        circularSlider.thumbLineWidth = 40
+        circularSlider.lineWidth = 20
         return circularSlider
     }
 
-    func update(for viewController: UIViewController) {
-        viewController.view.setNeedsDisplay()
-        if let vc = viewController as? SimplestCircularSliderViewController {
-            vc.wholeView?.setNeedsDisplay()
-        }
+    func addSubview() {
+        baseView.addSubview(circularSlider)
     }
 
-    func config(_ minimum: CGFloat, _ maximum: CGFloat, _ end: CGFloat)  {
+    func removeSubview() {
+        baseView.removeFromSuperview()
+    }
+
+    func config(min minimum: CGFloat, max maximum: CGFloat, until end: CGFloat)  {
+        circularSlider.backgroundColor = .clear
         circularSlider.minimumValue = minimum
         circularSlider.maximumValue = maximum
         circularSlider.endPointValue = end
+    }
+
+    func update(by base: UIView) {
+        baseView = base
+        circularSlider.setNeedsLayout()
+        circularSlider.setNeedsDisplay()
     }
 
     ///

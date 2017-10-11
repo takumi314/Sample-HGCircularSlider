@@ -37,7 +37,8 @@ class CircularSliderSampleListViewController: UITableViewController {
         let type = CellType(rawValue: identifier) ?? .other
         switch type {
         case .simplest:
-            vc = SimplestCircularSliderViewController()
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            vc = storyboard.instantiateViewController(withIdentifier: SimplestCircularSliderViewController.identifier())
             break
         default:
             break
