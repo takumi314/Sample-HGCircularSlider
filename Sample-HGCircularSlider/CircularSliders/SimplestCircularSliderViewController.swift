@@ -88,4 +88,15 @@ class SimplestCircularSliderViewController: UIViewController  {
     }
 
 }
+
+// MARK: - CircularSliderViewDelegate
+
+extension SimplestCircularSliderViewController: CircularSliderViewDelegate {
+    func circulerSliderView(_ view: CircularSliderView) -> Bool {
+        print("setNeedsDisplay")
+        value = view.endPointValue
+        presenter?.circularSlider.setNeedsLayout()
+        presenter?.circularSlider.setNeedsDisplay()
+        return false
+    }
 }
